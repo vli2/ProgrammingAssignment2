@@ -14,9 +14,9 @@
 # of the scoping rules of the R language and how they can be manipulated 
 # to preserve state inside of an R object.
 
-#######################################################
+########################################################
 #  Function: makeCacheMatrix
-#######################################################
+########################################################
 # This function creates a special "matrix" object 
 # which can cache its inverse and is really a list 
 # containing a function to 
