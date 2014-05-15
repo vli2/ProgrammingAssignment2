@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-# Programming Assignment 2
+#################################################################
+#  Data Science: R Programming
+#  Programming Assignment 2
+#################################################################
 # This assignment requires to write an R function that is able to 
 # cache potentially time-consuming computations.  For example, 
 # taking the inverse of a matrix is typically a fast operation.
@@ -14,12 +14,12 @@
 # of the scoping rules of the R language and how they can be manipulated 
 # to preserve state inside of an R object.
 
-
-## Write a short comment describing this function
-
-# Function makeCacheMatrix creates a special "matrix" object 
-# which can cache its inverse and is really a list containing 
-# a function to 
+#######################################################
+#  Function: makeCacheMatrix
+#######################################################
+# This function creates a special "matrix" object 
+# which can cache its inverse and is really a list 
+# containing a function to 
 # 
 # 1. set the value of the matrix
 # 2. get the value of the matrix
@@ -41,8 +41,9 @@ makeCacheMatrix <- function(x = numeric()) {
        getsolve = getsolve)
 }
 
-## Write a short comment describing this function
-
+##########################################################
+# Function: cacheSolve
+##########################################################
 # This function computes the inverse of the special "matrix" returned by
 #  makeCacheMatrix above.  If the inverse has already been calculated
 # (and the matrix has not changed), then cacheSolve will retrieve the 
